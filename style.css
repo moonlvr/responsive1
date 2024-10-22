@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+/* ---------------header navbar--------------- */
+header {  
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10; 
+  flex: auto; 
+  flex-direction: row; 
+}
+
+.navbar {
+  display: flex;
+  padding: 22px 0;
+  align-items: center;
+  max-width: 2000px; 
+  margin: auto;
+  justify-content: space-between; 
+}
+
+.navbar .logo {
+  gap: 10px;
+  display: flex; 
+  text-decoration: none;
+}
+
+.navbar .logo img {
+  width: 40px;
+  border-radius: 50%; 
+  margin-left: 60px;
+  margin-top: -3px;
+}
+
+.navbar .logo h2 {
+  color:  #14924d;
+  font-weight: 600; 
+  font-size: 1.7rem;
+}
+
+nav {
+  background: white;
+  padding: 10px 40px 10px 70px;
+  border-left: none;
+  border-right: none;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul li.logo {
+  flex: 1;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+nav ul div.items {
+  padding: 0 25px;
+  display: inline-flex;
+}
+
+nav ul div.items a {
+  text-decoration: none;
+  font-size: 18px;
+  padding: 0 12px;
+  color: #14924d;
+}
+
+nav ul div.items a:hover {
+  color: black;
+}
+
+nav ul li.btn {
+  font-size: 29px;
+  flex: 1;
+  padding: 0 40px;
+  display: none;
+}
+
+nav ul li.btn span {
+  height: 42px;
+  width: 42px;
+  text-align: center;
+  line-height: 42px;
+  border: 1px solid #151515;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ---------------main div---------------*/
+
+.coverDiv{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: url(images/pnc.jpg) fixed no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.coverDiv .mainDiv{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(111vh - 80px);
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+}
+
+.mainDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.mainSec {
+  max-width: 1000px; /* Increase the max-width for a wider layout */
+  display: flex;
+}
+
+.card {
+
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  margin: 10px;
+  margin-left: -20px;
+}
+
+.image-container {
+  flex: 0 0 55%; /* Take up 50% of the width */
+  margin: 30px;
+}
+
+.image-container img {
+  width: 120%;
+  height: auto;
+  margin-left: -20px;
+}
+
+.card-description {
+  padding: 20px 10px 0;
+  flex: 1;
+  margin-left: 60px;
+}
+
+h2 {
+  color: #14924d;
+  font-size: 34px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+h3 {
+  font-size: 37px;
+  color: #14924d;
+  text-align: left;
+}
+
+p {
+  color: white;
+  font-size: 17px;
+  margin-bottom: 0;
+  text-align: justify;
+}
+
+/* GALLERY --------------------------------------------------------------------------------------------------------------*/
+
+.mainDiv {
+  text-align: center; /* Center align the contents */
+}
+
+.mainSec {
+  position: relative; /* Position relative for absolute positioning */
+  margin-top: 60px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left; /* Center align the images */
+  margin-top: 40px; /* Adjust margin as needed */
+  
+}
+
+.galleryhead {
+  background-color: #14924d;
+  width: 980px;
+}
+
+
+.gallery img {
+  width: calc(33.33% - 20px); /* Adjust the width as needed */
+  margin: 10px; /* Adjust the margin as needed */
+}
+
+.mainDiv .mainSec h1 {
+  position: absolute; /* Position the h1 absolutely */
+  top: 0; /* Position at the top */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  font-size: 36px; /* Adjust font size as needed */
+}
+
+.galleryfoot{
+  position: absolute; /* Position the h1 absolutely */
+  top: 0; /* Position at the top */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  font-size: 16px; /* Adjust font size as needed */
+}
+
+.galleryfoot {
+  margin-top: 52%;
+  width: 980px;
+}
+
+/* about us */
+
+.aboutheading {
+  background-color: #14924d;
+  color: white;
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+ul, i {
+  list-style: none;
+  background-color: white;
+  margin: 10px;
+  word-spacing: 5px;
+  width: 800px;
+  font-size: 7px;
+  padding:15px;
+
+}
+
+ul p{
+  color: black;
+}
+
+.abouthead {
+  margin-top: 90px;
+  font-size: 40px;
+}
+
+.name {
+  font-size: 15px;
+}
+.aboutcontent{
+  overflow-y: scroll;
+  height: 500px;
+}
+ul hr{
+  opacity: 40%;
+}
+
+/* contact */
+
+.contact {
+  margin-top: 60px;
+  background-color: white;
+  width: 980px;
+  height: auto;
+  text-align: center;
+  padding: 5px;
+}
+
+.contacthead {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact h3 {
+  font-size: 20px;
+  color: #14924d;
+  margin: 10px;
+  background-color: rgb(255, 255, 255);
+  width: 950px;
+}
+
+.contact img {
+  width: 100px; /* Adjust size as needed */
+  height: auto;
+  margin-bottom: 10px;
+}

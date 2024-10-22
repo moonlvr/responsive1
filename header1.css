@@ -1,0 +1,160 @@
+*{
+  padding: 0%;
+  margin: 0%;
+}
+body{
+  background-color: rgb(145, 189, 122);
+  
+ 
+}
+
+#title{
+  color: aliceblue;
+  font-size: 20px;
+  font-weight: bold;
+}
+.container{
+  background-color: rgb(143, 176, 110);
+  display: flex;
+  justify-content: space-between;
+  height: 67px;
+}
+.nav-logo{
+  display: flex;
+}
+ #logo2{
+  width: 44px;
+  height: 45px;
+  margin-top: -7px;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  
+}
+ .navigation li a {
+  text-decoration: none;
+  color: rgb(254, 254, 254);
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  
+}
+.navigation li a:hover{
+  color: rgb(0, 87, 0);
+}
+.nav-logo, .nav-bar, .nav-register {
+  width: 100%;
+  padding: 20px;
+}
+
+#register {
+  float: right;
+  color: rgb(91, 150, 31);
+  background-color: white;
+  width: 100px;
+  height: 30px;
+  border-radius: 40px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 40px;
+}
+#register:hover{
+  background-color: rgb(218, 235, 201);
+  
+}
+.main-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-grow: 1;
+}
+
+#artfest {
+  font-size: 30px;
+  color: white;
+  margin-top: 30px;
+}
+.main-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 300px;
+  float:right;
+
+}
+.container{
+  background-color: rgb(43, 9, 80);
+  display: flex;
+  justify-content: space-between;
+}
+/*
+/*RESPONSIVE WEB PAGE*/
+
+@media (max-width:1000px){
+  .container{ 
+  padding: 18px 60px ;
+}
+.nav-bar a{
+  margin: 0px 10px;
+}
+#title{
+  font-size: 20px;
+}
+#logo2 {
+  width: 34px;
+  height: 35px;
+}
+}
+@media (max-width:700px){
+  .nav-logo {
+  margin-left: -70px;
+  }
+  #title{
+    color: aliceblue;
+    font-size: 15px;
+  }
+  #register{
+    margin-right: -35px;
+  }
+  .nav-bar{
+    margin-left: -40px;
+    background-color:  rgb(163, 197, 145);
+    margin-top: 85px;
+    height: 300px;
+    padding-bottom: 30px;
+    position: absolute;
+    left: 0;
+    width: 170px;
+    height: 200px;
+    top: 18px;
+    opacity: 0.9;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+  
+  
+    
+  }
+  .nav-bar ul {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    gap: 10px;
+    font-size: 18px;
+    
+    
+  }
+  .nav-bar li {
+    padding: 10px;
+    text-align: center;
+    
+  }
+  
+}
+
+
+
