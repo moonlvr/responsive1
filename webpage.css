@@ -418,6 +418,13 @@ a:hover {
   width: 40%;
     height: 30%;
 }
+
+  
+ /*======FOOTER======*/
+footer{
+ padding-left: -100px;
+ width: 250px;
+}
   
   /*====GALLERY====*/
   .container-gallery .gallery {
